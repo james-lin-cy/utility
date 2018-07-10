@@ -11,3 +11,13 @@ PS1='[\[\e[0;33m\]\A\[\e[0m\]][MBP12]:\[\e[0;34m\]\W\[\e[0m\]\$ '
 alias ll='ls -alh'
 alias la='ls -a'
 alias vi='vim'
+
+# for python
+if [ ! -z $(which pyenv) ]; then
+    PATH="$HOME/.pyenv/shims:$PATH"
+fi
+if [ ! -z $(which pipenv) ]; then
+    export PIPENV_VENV_IN_PROJECT=1
+fi
+
+
