@@ -10,6 +10,7 @@ PS1='[\[\e[0;33m\]\A\[\e[0m\]][MBP12]:\[\e[0;34m\]\W\[\e[0m\]\$ '
 # sets up proper alias commands when called
 alias ll='ls -alh'
 alias la='ls -a'
+alias ls="ls -GFv"
 alias vi='vim'
 
 # for python
