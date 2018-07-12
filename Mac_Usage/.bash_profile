@@ -13,6 +13,9 @@ alias la='ls -a'
 alias ls="ls -GFv"
 alias vi='vim'
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # for python
 if [ ! -z $(which pyenv) ]; then
     PATH="$HOME/.pyenv/shims:$PATH"
