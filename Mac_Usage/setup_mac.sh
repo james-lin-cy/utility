@@ -15,6 +15,12 @@ if [ -f "$HOME/.vimrc" ]; then
 fi
 cp /tmp/utility/Mac_Usage/.vimrc $HOME/
 
+echo "===> Copy and backup .vimrc"
+if [ -f "$HOME/.vimrc" ]; then
+    mv $HOME/.vimrc $HOME/.vimrc.org
+fi
+cp /tmp/utility/Mac_Usage/.vimrc $HOME/
+
 
 echo "===> Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
