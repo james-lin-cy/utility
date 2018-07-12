@@ -37,6 +37,11 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 echo "===> Setup Sublime Text"
 echo '{
 	"font_size": 18,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
 }' > $HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 
