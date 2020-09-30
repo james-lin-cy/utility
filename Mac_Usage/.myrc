@@ -1,7 +1,4 @@
 # for python
-if [ ! -z $(which pyenv) ]; then
-    PATH="$HOME/.pyenv/shims:$PATH"
-fi
 if [ ! -z $(which pipenv) ]; then
     export PIPENV_VENV_IN_PROJECT=1
 fi
