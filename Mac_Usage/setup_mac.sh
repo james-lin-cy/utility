@@ -1,7 +1,19 @@
 #!/bin/bash
 
+xcode-select --install
+XCODE=$?
+if [ ${XCODE} -ne 0 ]; then
+  echo "xcode-select --install failure, error: ${XCODE}"
+  exit ${XCODE}
+else
+
 echo "===> Clone git repo to /tmp/utility"
 git clone https://github.com/james-lin-cy/utility.git /tmp/utility
+GIT_CLONE=$?
+if [ ${GIT_CLONE} -ne 0 ]; then
+  echo "git clone failure, error: ${GIT_CLONE}"
+  exit ${GIT_CLONE}
+else
 
 echo "===> Copy and backup .bash_profile"
 if [ -f "${HOME}/.bash_profile" ]; then
