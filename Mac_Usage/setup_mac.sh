@@ -1,9 +1,10 @@
 #!/bin/bash
 
-xcode-select --install
+xcode-select -p
 XCODE=$?
 if [ ${XCODE} -ne 0 ]; then
-  echo "xcode-select --install failure, error: ${XCODE}"
+  xcode-select --install
+  echo "Start to install xcode commandline tool"
   exit ${XCODE}
 else
 
