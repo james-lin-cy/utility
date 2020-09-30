@@ -37,7 +37,7 @@ fi
 cp /tmp/utility/Mac_Usage/.myrc ${HOME}/
 
 echo "===> Install & setup oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 MY_ZSH_THEME="${HOME}/.oh-my-zsh/themes/my.zsh-theme"
 if [ -f "${MY_ZSH_THEME}" ]; then
     mv "${MY_ZSH_THEME}" "${MY_ZSH_THEME}.org"
