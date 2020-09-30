@@ -1,0 +1,22 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 16,
+    "terminal.external.osxExec": "iTerm.app",
+    "editor.minimap.enabled": false,
+    "eslint.alwaysShowStatus": true,
+    "prettier.resolveGlobalModules": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "search.useReplacePreview": false,
+    "files.exclude": {
+        "**/node_modules": true
+    },
+    "editor.find.addExtraSpaceOnTop": false,
+    "search.searchOnType": false,
+    "github.gitAuthentication": false,
+    "git.terminalAuthentication": false,
+    "cSpell.enableFiletypes": [
+        "!json"
+    ],
+    "debug.javascript.usePreview": false
+}

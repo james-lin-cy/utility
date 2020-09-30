@@ -1,0 +1,8 @@
+alias git-fp='git fetch && git pull'
+alias git-fpm='git checkout master && git fetch && git pull && git checkout -'
+alias git-mfp='git checkout master && git fetch && git pull'
+alias git-ch='git checkout -'
+alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
+alias git-npm-tag='npm version patch && git push origin master && git push --tags'
+
+export LESS="-FX"

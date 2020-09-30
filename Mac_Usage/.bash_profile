@@ -24,4 +24,4 @@ if [ ! -z $(which pipenv) ]; then
     export PIPENV_VENV_IN_PROJECT=1
 fi
 
-
+source ${HOME}/.myrc
