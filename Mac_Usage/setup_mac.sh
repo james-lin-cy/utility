@@ -42,7 +42,8 @@ MY_ZSH_THEME="${HOME}/.oh-my-zsh/themes/my.zsh-theme"
 if [ -f "${MY_ZSH_THEME}" ]; then
     mv "${MY_ZSH_THEME}" "${MY_ZSH_THEME}.org"
 fi
-cp /tmp/utility/Mac_Usage/my.zsh-theme ${HOME}
+cp /tmp/utility/Mac_Usage/my.zsh-theme ${MY_ZSH_THEME}
+cp /tmp/utility/Mac_Usage/.zshrc ${HOME}
 
 echo "===> Install brew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
