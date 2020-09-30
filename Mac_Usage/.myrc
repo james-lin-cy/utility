@@ -1,3 +1,11 @@
+# for python
+if [ ! -z $(which pyenv) ]; then
+    PATH="$HOME/.pyenv/shims:$PATH"
+fi
+if [ ! -z $(which pipenv) ]; then
+    export PIPENV_VENV_IN_PROJECT=1
+fi
+
 alias git-fp='git fetch && git pull'
 alias git-fpm='git checkout master && git fetch && git pull && git checkout -'
 alias git-mfp='git checkout master && git fetch && git pull'
